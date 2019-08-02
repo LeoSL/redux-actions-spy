@@ -3,7 +3,9 @@ import { createStore } from "redux";
 import { connect } from "react-redux";
 import React from "react";
 import "./App.css";
+
 const RECORD_ACTION = "RECORD_ACTION";
+
 const setupStore = {
   actions: [
     {
@@ -13,7 +15,7 @@ const setupStore = {
   ]
 };
 
-const reducer = (action, initialState) => {
+const reducer = (initialState, action) => {
   if (typeof state === "undefined") {
     return initialState;
   }
